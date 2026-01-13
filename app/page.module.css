@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 2rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6B7280;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.playButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.playButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.rules {
+    background: #F3F4F6;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.rules h3 {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.rules ul {
+    padding-left: 1.5rem;
+    color: #4B5563;
+    line-height: 1.6;
+}

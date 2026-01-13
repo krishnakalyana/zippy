@@ -1,0 +1,53 @@
+:root {
+  --bg-color: #F8F9FA;
+  /* Light gray background */
+  --text-color: #1F2937;
+  --accent-color: #0A66C2;
+  /* LinkedIn Blue */
+  --cell-size: 56px;
+  --gap-size: 8px;
+  --grid-bg: #FFFFFF;
+  --cell-bg: #EBEBEB;
+  /* Unvisited cell */
+  --blocked-bg: #374151;
+  /* Dark blocked */
+  --start-bg: #057642;
+  /* LinkedIn Green */
+  --end-bg: #CC1016;
+  /* LinkedIn Red */
+  --checkpoint-bg: #F59E0B;
+  --path-color: #0A66C2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  touch-action: manipulation;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
