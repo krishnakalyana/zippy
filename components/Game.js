@@ -159,6 +159,13 @@ export default function Game({ puzzle, date }) {
         if (!isAdjacent(tip, target)) return;
 
         // 2. Must not be in path already (unless it's the tip - handled above)
+        // Check for Backtracking (erasing tip)
+        const previous = userPath[userPath.length - 2];
+        if (previous && isSameCell(target, previous)) {
+            setUserPath(prev => prev.slice(0, -1));
+            return;
+        }
+
         if (userIdxInPath(target) !== -1) return; // Crossing self
 
         // 3. Logic for Fixed Numbers
